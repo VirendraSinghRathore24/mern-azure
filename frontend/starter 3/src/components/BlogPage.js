@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import baseUrl from '../baseUrl';
 
 function BlogPage() {
 
@@ -13,7 +14,7 @@ function BlogPage() {
         setLoading(true);
         try{
   
-          const result = await fetch(`http://localhost:3002/getblog?sidebartitle=${sidebartitle.replace(" ", "-")}`);
+          const result = await fetch(`${baseUrl}/getblog?sidebartitle=${sidebartitle.replace(" ", "-")}`);
           const data = await result.json();
 
           setPost(data.data);

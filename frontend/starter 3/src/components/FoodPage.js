@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import FoodCard from './FoodCard';
 import Spinner from './Spinner';
+import baseUrl from '../baseUrl';
 
 function FoodPage() {
 
@@ -16,7 +17,7 @@ function FoodPage() {
         setLoading(true);
         try{
   
-          const result = await fetch(`http://localhost:3002/getcardsbycategory`);
+          const result = await fetch(`${baseUrl}/getcardsbycategory`);
           const data = await result.json();
 
           console.log(data);

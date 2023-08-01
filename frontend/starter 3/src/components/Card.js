@@ -6,7 +6,7 @@ function Card({post}) {
   return (
     <div>
          <div className='relative pointer-events-auto '>
-                <img src={post.imageUrl} className='w-[600px] h-[400px] rounded-md'/>
+                <img src={post.imageUrl} className='w-[600px] h-[400px] rounded-md' loading='lazy'/>
                     
                 <div className='absolute text-white bottom-0 px-4  text-left'>
                     <p className='text-[40px] font-semibold '>{post.title}</p>

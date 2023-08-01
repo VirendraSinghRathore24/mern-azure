@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function FoodCard({post}) {
   return (
     <div className='p-5 relative'>
-                <img src={post.imageUrl} alt='pic' className='w-[280px] h-[300px] rounded-md'/>
+                <img src={post.imageUrl} alt='pic' className='w-[280px] h-[300px] rounded-md' loading='lazy'/>
                     
                 <div className='absolute bottom-0 text-white px-4 text-left'>
                     <p className='text-[30px] font-semibold '>{post.title}</p>

@@ -9,6 +9,7 @@ import AboutUS from "./components/AboutUS";
 import ClothsPage from "./components/ClothsPage";
 import ToysPage from "./components/ToysPage";
 import InsertCategoryCard from "./components/admin/InsertCategoryCard";
+import BabyFood from "./components/BabyFood";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/aboutus" element={<AboutUS/>}/>
           <Route path="/cloths" element={<ClothsPage/>}/>
           <Route path="/toys" element={<ToysPage/>}/>
+          <Route path="/babyfood6month" element={<BabyFood/>}/>
       </Routes>
     </div>
   )
